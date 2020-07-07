@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/5c08699f58.js" crossorigin="anonymous"></script>
+        <!---<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <style>
+            body{
+                    background: rgb(139, 139, 139);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .sec1{
+                height:100%;
+                width: 20%; background-color:  rgb(139, 139, 139); position:fixed;
+            }
+
+            #paul{
+                background-color:  whitesmoke;
+                text-align: center;
+            }
+            #img1{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .iconList{
+                margin-top: -10px;
+                background-color:  whitesmoke;
+                text-align: center;
+                height: 50px;
+                padding: 10px;
+            }
+            .bruno{
+                background-color:  whitesmoke;
+                margin-top: -16px;
+            }
+
+            .scroll {
+                height:380px;
+                overflow-y:auto;
+                background-color:  rgb(139, 139, 139); ;
+            }
+
+            .sec2{
+                height:100%;
+                width: 78%;
+                position:relative;
+                float: right;
+                background-color:  rgb(139, 139, 139);
+            }
+
+            .d1{
+                    width: 100%;
+                }
+
+                ul {
+                    list-style-type: none;
+                    overflow: hidden;
+                    background-color:whitesmoke;
+                    padding: 0px;
+                    margin: 0px;
+                }
+
+                li {
+                    float: right;
+                }
+
+                li a {
+                        color:black;
+                        display: block;
+                        text-align: center;
+                        padding: 30px 30px;
+                        text-decoration: none;
+                }
+
+                li a:hover {
+                     color:white;
+                     background-color: blue;
+                }
+
+                .active{
+                    color: white;
+                    background-color: violet;
+                }
+
+                li::after{
+                    clear: right;
+                }
+                #d2{
+                    background-color: whitesmoke;
+                    height: 300px;
+                    margin-top: 30px;
+                    
+                }
+
+                .content{
+                    line-height: 10px;
+                    width: 30%;
+                    float: left;
+                    margin:40px;
+                   
+                }
+
+                #d3{
+                    
+                    width: 65%;
+                    position: relative;                   
+                }
+
+                #icon{
+                    width: 60px;
+                    height: 60px;
+                    background-color: red;
+                    border-radius: 50%;
+                    position:absolute;
+                    margin-left: 470px;
+                    margin-top: 40px;
+                }
+
+                #icon1{
+                    color: white;
+                    position: absolute;
+                    margin-left: 23px;
+                    margin-top: 20px;
+                    width: 40px;
+                }
+                .img2{
+                    width: 40%;
+                    height: 200px;
+                    margin:20px 30px 40px 70px;
+                    border-radius: 60%;
+                    position: absolute;
+                }
+
+                .button {
+                    display: inline-block;
+                    background-color: #4CAF50; 
+                    border: none;
+                    color: white;
+                    padding: 20px 75px;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 16px;
+                    transition-duration: 0.4s;
+                
+                }
+
+                .button:hover {
+                    background-color: white;
+                    color:green;
+                }
+
+                .container{
+                    clear: both;
+                    background-color: whitesmoke;
+                    height:100%;
+                    width:100%;
+                    padding:30px;
+                    margin-top: 30px;
+                    position: relative;
+                    
+                }
+
+                #d5{
+                    float: left;
+                    width: 50%;
+                    position: relative;
+                    outline: 28px solid whitesmoke;
+                }
+                
+                h4{
+                    margin-top: 20px ;
+                    margin-left: 10px;
+                }
+
+                .cards{
+                    margin-top: 10px;
+                    display: flex;
+                    width: 100%;
+                    height: auto;   
+                    flex-wrap: wrap;
+                   background : whitesmoke;
+                    
+                }
+
+                .card{
+                    height: 20%;
+                    width: 45%;
+                    padding: 30px;
+                    margin: 10px;
+                    background-color: white;
+                }
+                #d6{
+                    float: right;
+                    width: 50%;
+                    position: relative;
+                    background-color: whitesmoke;
+                    outline: 28px solid whitesmoke;
+                }
+
+                table{
+                    text-align: left;
+                }
+                td{
+                    padding: 10px;
+                }
+                @media only screen and (max-width: 600px) {
+                    .cards {   
+                    flex-direction: column;
+                    }
+                    li{
+                        float:none;
+                    }
+                }
+        </style>
+    </head>
+    <body>
+        <section class="sec1">
+            <div class="scroll">
+                <div id="paul">
+                    <img id="img1" src="bruno.jpg" width="150px" height="200px">
+                    <h1>Mifield Duo</h1>
+                    <p style="margin-top: -20px;"><span style="color: blue;">Player at mifield</span> in man utd.</p>
+                </div> 
+
+                <div class="iconList">
+                            <i class="fab fa-instagram" style="color: red;"></i>
+                            <i class="fab fa-twitter" style="color: blue; margin-left: 10px;"></i>
+                            <i class="fab fa-facebook" style="color: blue; margin-left: 10px;"></i>
+                </div>
+
+                <div class="bruno">
+                        <h3 style=" padding-left: 15px;">WHAT'S IN MY MINO</h3>
+                        <p style=" padding-left: 15px;">We can develop and design beyond your imagation. About your work,I don't 
+                            CSS is a language that describes the style of an HTML document.
+                            CSS describes how HTML elements should be displayed.
+                        </p>
+                </div>    
+            </div>
+        </section>
+
+        <section class="sec2">
+            <header class="d1">
+                <ul>
+
+                    <li><a href="table.html"><i class="fa fa-search"></i></a></li>
+                    <li><a href="table.html">Contact</a></li>
+                    <li><a href="table.html">Experience</a></li>
+                    <li><a href="table.html">Education</a></li>
+                    <li><a href="table.html">Salary</a></li>
+                    <li><a href="table.html">About</a></li>
+                    <li><a href="table.html">Detail</a></li>
+                    <li><a href="table.html">Number</a></li>
+                    <li class="active"><a href="table.html">Home</a></li>
+
+                </ul>
+            </header>
+
+
+            <div id="d2">
+                <div class="content">
+                    <h1 style="font-size: 48px;">Hello.</h1>
+                    <p style="font-size: 28px;">My name is Akshay</p>
+                    <p style="font-size: 18px;">& I am absolutely design addicted</p>
+                    <button class="button"><i class="far fa-image"> </i>        View Profile</button>
+                </div>
+
+                <div id="d3">
+                    <img src="download (4).jpg" width="180px" height="180px" class="img2" >
+                    <div id="icon">
+                        <i class="far fa-comment-dots" id="icon1"></i>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="container">
+                <h1><i class="fa fa-user-o" style="padding: 10px; color:darkblue;"> </i>About Me</h1>
+                <p>Ole Gunnar Solskjaer admits Manchester United need to make ‘one or two’ very good decisions
+                in the transfer window if they are to challenge Liverpool and Manchester City for the title
+                next season - but he only wants players with the right DNA and identity at the club
+                United’s 15-game unbeaten run and good form since the restart has prompted many to get excited
+                about the team’s potential for next seaso While Solskjaer’s side have closed the gap on fourth-placed
+                Chelsea and third-placed Leicester to two and three points respectively, they still sit 34 points behind</p>            <div id="d4">
+
+
+                <div id="d5">
+                        <div class="cards">
+                            <div class="card" style="border-bottom: 3px solid blue;">
+                                <i class="far fa-lightbulb" style="color: blue; margin-left: 10px;"> </i>
+                                <h4>Logo Design</h4>
+                            </div>
+                            <div class="card" style=" border-bottom: 3px solid red;">
+                                <i class="fa fa-globe" style=" color: red; margin-left: 10px; "> </i>
+                                <h4>Logo Design</h4>
+                            </div>
+                            <div class="card" style=" border-bottom: 3px solid yellow;">
+                                <i class="fa fa-desktop" style="color: yellow; margin-left: 10px;"> </i>
+                                <h4>Logo Design</h4>
+                            </div>
+                            <div class="card" style="border-bottom: 3px solid purple;">
+                                <i class="fa fa-mobile-alt" style=" color: purple; margin-left: 10px;"> </i>
+                                <h4>Logo Design</h4>
+                            </div>
+                        </div>
+                </div>
+
+                <div id="d6">
+                    <h3 style="margin-bottom: -10px;">PERSONAL DETAILS</h3>
+                    <table class="table" style="font-size: 15px; font-weight: bold;">
+                        <tr>
+                            <td>Full Name</td>
+                            <td>:</td>
+                            <td>Akshay Handge</td>
+                        </tr>
+                        <tr><td>Father's Name</td>
+                            <td>:</td>
+                            <td>Mr.Deepak Handge</td>>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>:</td>
+                            <td>Street 110-B Kalan Bag, Dewas,M.P. INDIA </td>
+                        </tr>
+                        <tr>
+                            <td>Zip Code</td>
+                            <td>:</td>
+                            <td>12345</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>:</td>
+                            <td>+0 123456789,+0 123456789</td>
+                        </tr>
+                        <tr>
+                            <td> E-mail</td>
+                            <td>:</td>
+                            <td>support@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Website</td>
+                            <td>:</td>
+                            <td>https://www.w3schools.com/css/default.asp</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
