@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Input Field Calculation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Field Calculation</title>
 </head>
+
 <body>
-<input type="text" id="input1" placeholder="Enter a number">
-<input type="text" id="input2" placeholder="Enter another number">
-<input type="text" id="result" placeholder="Result" readonly>
+    <input type="text" id="input1" placeholder="Enter a number">
+    <input type="text" id="input2" placeholder="Enter another number">
+    <input type="text" id="result" placeholder="Result" readonly>
 
-<script>
-    // Get references to the input fields
-    const input1 = document.getElementById('input1');
-    const input2 = document.getElementById('input2');
-    const result = document.getElementById('result');
+    <script>
+        // Get references to the input fields
+        const input1 = document.getElementById('input1');
+        const input2 = document.getElementById('input2');
+        const result = document.getElementById('result');
 
-    // Add event listener to the first input field
-    input1.addEventListener('input', updateResult);
-    input2.addEventListener('input', updateResult);
+        // Add event listener to the first input field
+        input1.addEventListener('input', updateResult);
+        input2.addEventListener('input', updateResult);
 
-    // Function to calculate the result and update the third input field
-    function updateResult() {
-        const value1 = parseInt(input1.value);
-        const value2 = parseInt(input2.value);
+        // Function to calculate the result and update the third input field
+        function updateResult() {
+            const value1 = parseInt(input1.value);
+            const value2 = parseInt(input2.value);
 
-        // Check if both input fields have valid integers
-        if (!isNaN(value1) && !isNaN(value2)) {
-            result.value = value1 * value2;
-        } else {
-            result.value = ''; // Clear the result if one of the inputs is invalid
+            // Check if both input fields have valid integers
+            if (!isNaN(value1) && !isNaN(value2)) {
+                result.value = value1 * value2;
+            } else {
+                result.value = ''; // Clear the result if one of the inputs is invalid
+            }
         }
-    }
-</script>
+
+        /*
+        
+        $uuid = Str::uuid()->toString();
+    $shortenedUuid = substr($uuid, 0, 8);
+    
+    or
+    
+    $transactionId = base64_encode($transaction->id);
+    
+    
+    
+        */
+    </script>
 </body>
+
 </html>
